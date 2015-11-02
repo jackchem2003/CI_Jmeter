@@ -12,8 +12,8 @@
           },
           "browserOptions": {
             "browserName": "firefox",
-            "username": "${jackchem2003}",
-            "accessKey": "${3d4fa22d-12ad-4f18-9168-37ea7d88b522}",
+            "username": "${sheikp}",
+            "accessKey": "${a48e19aa-39fa-4419-89f4-2af30746d0d1}",
             "os"       : "windows"
           }
         }

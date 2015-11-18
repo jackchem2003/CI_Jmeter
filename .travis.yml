@@ -1,3 +1,16 @@
+language: node_js
+node_js:
+- 0.10
+before_script:
+  - "npm install -g se-interpreter"
+script:
+  - "se-interpreter interpreter_config.json"
+
+env:
+  global:
+    - SAUCE_USERNAME=sheikp
+    - SAUCE_ACCESS_KEY=a48e19aa-39fa-4419-89f4-2af30746d0d1
+
 language: python
 python:
   - "2.7"

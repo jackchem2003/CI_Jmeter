@@ -5,42 +5,44 @@
   "steps": [
     {
       "type": "get",
-      "url": "http://fosimple.azurewebsites.net/"
+      "url": "http://vzdispatchtest.azurewebsites.net/"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Repair Ticket"
+      }
     },
     {
       "type": "setElementText",
       "locator": {
         "type": "id",
-        "value": "txtPhone"
+        "value": "txtcustid"
       },
-      "text": "8776964555"
+      "text": "1234"
     },
     {
       "type": "setElementText",
       "locator": {
         "type": "id",
-        "value": "txtEmail"
+        "value": "txtdescription"
       },
-      "text": "sujoy@verizon.com"
-    },
-    {
-      "type": "setElementText",
-      "locator": {
-        "type": "id",
-        "value": "txtZip"
-      },
-      "text": "12345"
+      "text": "Hello"
     },
     {
       "type": "clickElement",
       "locator": {
         "type": "id",
-        "value": "lnkOrder"
+        "value": "btnStatus"
       }
     },
     {
-      "type": "verifyTextPresent",
-      "text": "Thank you for Ordering FiOS. Technician (Mobile: ) will come to your place on 2015-8-31 @ 9AM."
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "btnOkay"
+      }
     }
   ],
   "data": {

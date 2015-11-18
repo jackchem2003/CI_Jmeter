@@ -5,8 +5,43 @@
   "steps": [
     {
       "type": "get",
-      "url": "https://www.google.co.in/?gws_rd=ssl"
+      "url": "http://fosimple.azurewebsites.net/"
     },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "txtPhone"
+      },
+      "text": "8776964555"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "txtEmail"
+      },
+      "text": "sujoy@verizon.com"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "txtZip"
+      },
+      "text": "12345"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "lnkOrder"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Thank you for Ordering FiOS. Technician (Mobile: ) will come to your place on 2015-8-31 @ 9AM."
+    }
   ],
   "data": {
     "configs": {},

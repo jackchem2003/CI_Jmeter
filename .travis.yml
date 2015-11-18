@@ -4,11 +4,10 @@ node_js:
 python:
   - "2.7"
 before_script:
-  - chmod +x bin/JMeterInstaller.py
   - "npm install -g se-interpreter"
+   - chmod +x bin/JMeterInstaller.py
 script:
   - "se-interpreter interpreter_config.json"
-after_script:
   - nosetests -s
   - rm -rf results && mkdir results
   - apache-jmeter-2.13/bin/jmeter.sh -j results/jmeter.log -p tests/jmeter.properties -t tests/my_test_with_parameters.jmx -n -l results/my_test_with_parameters.jtl -Jserver=vzdispatchtest.azurewebsites.net
